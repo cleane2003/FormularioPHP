@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,  #2f2325 16.62%, #8E5D52 85.61%);
+  }
+  
+  .box {
+    /*centralizar*/
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+  }
+  
+  fieldset {
+    border: 3px solid #ED6D8B;
+  }
+  
+  legend {
+    border: 1px solid #ED6D8B;
+    padding: 10px;
+    text-align: center;
+    background-color: #ED6D8B;
+    border-radius: 8px;
+  }
+  
+  .inputBox {
+    position: relative;
+  }
+  
+  .Username {
+    background: none;
+    border: none;
+    /*faz uma borda abaixo estilo uma linha*/
+    border-bottom: 1px solid white;
+    /*tira a borda ao redor*/
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  
+  .labelUser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Qualquer lugar que clicar no input será executado a ação*/
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  /*isso fara com que os nomes subam e a letra diminua*/
+  .Username:focus ~ .labelUser,
+  .Username:valid ~ .labelUser {
+    top: -20px;
+    font-size: 12px;
+    color: #ED6D8B;
+  }
+  
+  #data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    left: 30px;
+  }
+  
+  #submit {
+    background-image: linear-gradient(to right, #ED6D8B, #F1809A, #F8A9BB);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #submit:hover {
+    background-image: linear-gradient(to left, #ED6D8B, #F1809A, #F8A9BB);
+  }
+  
+  input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+  }
+    input[type="radio"]:checked {
+    background-color: #F1809A;
+  }
+
+.pagina-inicial {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 70px;
+  color: white;
+  border-radius: 15px;
+}
+
+.user {
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.botao {
+  background-image: linear-gradient(to right, #ED6D8B, #F1809A, #F8A9BB);
+  padding: 14px 16px;
+  width: 100%;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-image: linear-gradient(to left, #ED6D8B, #F1809A, #F8A9BB);
+}
+
